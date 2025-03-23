@@ -9,11 +9,16 @@ return {
                 number = false,         -- Disable line numbers
                 relativenumber = false, -- Disable relative line numbers
             },
+            keymaps = {
+                ["<C-h>"] = false,
+                ["<C-l>"] = false,
+                ["<C-j>"] = false,
+                ["<C-k>"] = false,
+            },
+            delete_to_trash = true,
         },
-        -- Optional dependencies
         dependencies = { { "echasnovski/mini.icons", opts = {} } },
-        -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
         lazy = false,
-        delete_to_trash = true
     },
 }
+

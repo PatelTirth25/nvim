@@ -134,9 +134,7 @@ return {
                     filetypes = { "javascript", "typescript", "javascriptreact", "typescriptreact" },
                 },
                 clangd = {},
-                rust_analyzer = {
-                    filetypes = { "rust" }
-                },
+                rust_analyzer = {},
                 lua_ls = {
                     settings = {
                         Lua = {
