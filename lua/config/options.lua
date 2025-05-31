@@ -21,7 +21,9 @@ vim.opt.clipboard = "unnamedplus"
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
+
 -- Save undo history
+vim.o.undofile = true
 
 -- To change behavior of d,c,p,D
 vim.api.nvim_set_keymap("n", "d", '"_d', { noremap = true })
