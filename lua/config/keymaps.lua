@@ -61,11 +61,13 @@ key("n", "]q", "<cmd>cnext<CR>")
 key("n", "[q", "<cmd>cprev<CR>")
 
 -- Terminal keymaps
-key("n", "<leader>ot", function()
-    vim.cmd.vnew()
-    vim.cmd.term()
-    vim.cmd.wincmd("J")
-    vim.api.nvim_win_set_height(0, 15)
-end)
+key("n", "<leader>ot", "<cmd>Floaterminal<CR>", { noremap = true, silent = true })
+
+-- key("n", "<leader>ot", function()
+--     vim.cmd.vnew()
+--     vim.cmd.term()
+--     vim.cmd.wincmd("J")
+--     vim.api.nvim_win_set_height(0, 15)
+-- end)
 
 key("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Escape terminal mode" })
